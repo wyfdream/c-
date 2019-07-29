@@ -5,7 +5,12 @@ class myshare_ptr
 {
 public:
 
-	myshare_ptr(T* p) :m_count(new int), ptr(p) {}
+	myshare_ptr(T* p) :m_count(new int), ptr(p) 
+	{
+		if(p)
+			*m_ount=1;
+			
+	}
 	myshare_ptr& operator=(const myshare_ptr& p)
 	{
 		--*m_count;
