@@ -11,7 +11,7 @@ struct TreeNode {
 	TreeNode(int x) : val(x),s(""), left(NULL), right(NULL) {}
 	TreeNode(pair<string, int> p):val(p.second),s(p.first), left(NULL), right(NULL){}
 };
-vector<pair<string, int>> v = { {"a",10},{"e",15},{ "i",12 },{"s",3 },{ "t",4 },{ "sp",13 },{ "nl",1 } };
+vector<pair<string, int>> v = { {"a",10},{"e",15},{ "i",12 },{"s",3 },{ "t",4 },{ "sp",13 },{ "nl",1 } };//字母：出现频率
 struct cmp
 {
 	bool operator()(TreeNode* a, TreeNode* b)
