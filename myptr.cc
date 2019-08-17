@@ -15,7 +15,7 @@ public:
 	{
 		--*m_count;
 		if (*m_count == 0)
-			delete p;
+			delete ptr;
 		ptr = p;
 		++*p.m_count;
 		m_count = p.m_count;
